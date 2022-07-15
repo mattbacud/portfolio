@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -25,16 +26,46 @@
     border-bottom: 1px solid #1111;
 }
 .nav, .nav-icon{
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
-    align-content: center;
+    /* align-content: flex-end; */
+}
+.nav{
+    margin-top: 10px;
 }
 .header .logo h1{
     font-weight: 900;
 }
 .head .nav li a{
-    padding: 5px 1em;
+    padding: 0 1em;
 }
 .head .nav-icon li a{
-    padding: 5px .5em;
+    padding: 0 .5em;
+}
+
+.header-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header-content .header-content-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-content .header-content-left h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 2.5em;
+}
+.header-content .header-content-left h1 b{
+    font-weight: 500;
+}
+.header-content .header-content-left .text-bottom{
+    font-weight: 800;
+    font-size: 3em;
+}
+.header-content .header-content-right img{
+    width: 80%;
+    height: auto;
 }
